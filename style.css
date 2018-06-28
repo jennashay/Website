@@ -155,15 +155,15 @@ html {
 }
 
 body {
-  font-family: 'Cooper Hewitt', 'PT Sans', sans-serif;
+  font-family: 'Cooper Hewitt', sans-serif;
 /*  font-weight: lighter;*/
   height: 100%;
   margin: 0;
   padding: 0;
   position: relative;
   font-weight: 300;
-  line-height: 2em;
-  font-size: 1.5em;
+  line-height: 25px;
+  font-size: 18px;
   min-height: 100%;
 }
 footer {
