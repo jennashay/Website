@@ -259,7 +259,7 @@ header a {
 }
 .text-content {
   display: inline-block;
-  margin-top: 150px;
+  margin-top: 50px;
   margin-bottom: 50px;
 /*  width: 100%;*/
 }
@@ -354,6 +354,10 @@ a.bold {
   display: inline-block;
   width: 50%;
 }
+.larger {
+  font-size: 24px;
+  line-height: 28px;
+}
 
 /* Don't display on mobile */
 @media only screen and (max-width: 768px) {
@@ -369,6 +373,14 @@ a.bold {
     max-width: 980px;
   }
 */
+
+
+  .text-content {
+    display: inline-block;
+    margin-top: 150px;
+    margin-bottom: 50px;
+  /*  width: 100%;*/
+  }
   .content {
     padding: 0 40px;
   }
