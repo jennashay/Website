@@ -354,9 +354,12 @@ a.bold {
   display: inline-block;
   width: 50%;
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  
+
+/* Don't display on mobile */
+@media only screen and (max-width: 768px) {
+  .no-mobile {
+    display: none;
+  }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
