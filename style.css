@@ -173,7 +173,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.8);
   color: rgba(255, 255, 255, 0.6);
   z-index: 100;
-  margin-top: 400px;
+/*  margin-top: 400px;*/
 }
 footer .socials {
   margin: 0 20px;
@@ -374,6 +374,9 @@ a.bold {
   }
 */
 
+.desktop-top-bump {
+  margin-top: 145px;
+}
 
   .text-content {
     display: inline-block;
