@@ -111,7 +111,7 @@
 }
 
 
-.parallax {
+.fade-in {
     -webkit-animation: fadein .7s ease-in-out; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein .7s ease-in-out; /* Firefox < 16 */
         -ms-animation: fadein .7s ease-in-out; /* Internet Explorer */
@@ -176,7 +176,7 @@ footer {
 /*  margin-top: 400px;*/
 }
 footer .socials {
-  margin: 0 20px;
+  margin: 30px;
 }
 footer a {
   line-height: 1.7em;
@@ -257,16 +257,16 @@ header a {
   background-attachment: fixed;
   background-size: cover;
 }
+.p200 {
+  padding: 75px 0;
+}
 .text-content {
   display: inline-block;
-  margin-top: 50px;
-  margin-bottom: 50px;
-/*  width: 100%;*/
+  margin: 75px 0;
 }
 .image-content {
   display: inline-block;
-  margin-top: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 75px;
   width: 100%;
 }
 a.bold {
@@ -368,21 +368,14 @@ a.bold {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-/*
-  .max-width {
-    max-width: 980px;
-  }
-*/
-
-.desktop-top-bump {
-  margin-top: 145px;
-}
-
-  .text-content {
-    display: inline-block;
+  .desktop-top-bump {
     margin-top: 150px;
-    margin-bottom: 50px;
-  /*  width: 100%;*/
+  }
+  .text-content {
+    margin: 150px 0;
+  }
+  .image-content {
+    margin-bottom: 150px;
   }
   .content {
     padding: 0 40px;
@@ -390,9 +383,11 @@ a.bold {
   .column {
     width: 50%;
   }
-  
+  .p200 {
+    padding: 150px 0;
+  }
   footer .socials {
-    margin: 0 5px;
+    margin: 10px;
   }
 } 
 
