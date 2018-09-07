@@ -235,13 +235,13 @@ header a {
   }
 
   .chevron-button:hover .chevron  {
-/*    fill: white;*/
-    opacity: .4;
+    fill: white;
+/*    opacity: .4;*/
   }
 
   .project a:hover {
     opacity: .9;
-    transition: opacity .3s ease;
+    transition: .3s ease;
   }
 }
 
@@ -290,7 +290,7 @@ a.bold {
 }
 .chevron {
   height: 16px;
-  fill: #636363;
+  fill: black;
   transition: opacity .3s ease;
 }
 #projects {
