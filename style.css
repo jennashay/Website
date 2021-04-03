@@ -23,12 +23,9 @@ body {
   max-width: 1280px;
   margin: 0 auto 400px;
 }
-/* .column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-} */
+.column {
+  width: 50%;
+}
 .header {
   font-family: "Futura", Helvetica, sans-serif;
   font-weight: bold;
@@ -74,6 +71,10 @@ body {
   .row {
     flex-direction: column;
     margin-bottom: 100px;
+  }
+  .column {
+    width: auto;
+    max-width: 100%;
   }
   .logo-container {
     max-width: 100%;
