@@ -5,117 +5,12 @@
     <link rel="shortcut icon" type="image/jpg" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
-    <title>Jenna Shay</title>
-
-    <style>
-      @font-face {
-        font-family: Futura;
-        src: url("/Futura Bold.otf") format("opentype");
-      }
-
-      head,
-      body {
-        background-color: white;
-        margin: 0;
-        padding: 0;
-        font-family: "Open Sans", sans-serif;
-      }
-      .logo {
-        width: 100%;
-        height: auto;
-      }
-      .row {
-        max-width: 1280px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 400px;
-      }
-      .row > * {
-        flex-basis: 50%;
-        flex-grow: 0;
-      }
-      .header {
-        font-family: "Futura", Helvetica, sans-serif;
-        font-weight: bold;
-        font-size: 26px;
-      }
-      .subheader {
-        font-size: 22px;
-        padding-top: 40px;
-      }
-      .center-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .block {
-        display: flex;
-        flex-direction: column;
-        padding: 140px;
-      }
-      .purple {
-        color: #8357cb;
-      }
-      .red {
-        color: #d22626;
-      }
-      .link {
-        cursor: pointer;
-        text-decoration: none;
-      }
-      .link:hover {
-        text-decoration: underline;
-      }
-      
-      /* mobile */
-      @media only screen and (max-width: 1280px) {
-        .block {
-          padding: 40px;
-        }
-      }
-      @media only screen and (max-width: 720px) {
-        .row {
-          flex-direction: column;
-          margin-bottom: 100px;
-        }
-        .logo-container {
-          max-width: 100%;
-          padding: 80px;
-          margin: 0 auto;
-        }
-        .logo {
-          max-width: 100%;
-          height: auto;
-        }
-        .block {
-          padding: 80px;
-        }
-      }
-      @media only screen and (max-width: 570px) {
-        .row {
-          flex-direction: column;
-          margin-bottom: 100px;
-        }
-        .logo-container {
-          max-width: 100%;
-          margin: 0 auto;
-          padding: 40px;
-        }
-        .logo {
-          max-width: 100%;
-          height: auto;
-        }
-        .block {
-          padding: 40px;
-        }
-      }
-    </style>
+    <link href="/style.css" rel="stylesheet" />
   </head>
   <body>
     <div class="intro row">
-      <img class="logo" src="logo.svg" />
-      <div class="center-item">
+      <div><img class="image" src="logo.png" /></div>
+      <div class="center">
         <div class="block">
           <div class="header">
             Hello! I’m <a href="/contact" class="link purple">Jenna Shay</a>. I’m a graphic designer
@@ -131,7 +26,7 @@
     </div>
 
     <div id="designs" class="row">
-      <div class="center-item">
+      <div class="center">
         <div class="block">
           <a href="gda/" class="link red header">The Graphic Design Archive Reimagined</a>
           <div class="subheader">
@@ -140,9 +35,7 @@
           </div>
         </div>
       </div>
-      <a class="center-item logo" href="gda/"
-        ><img class="logo" src="assets/archive-image.png"
-      /></a>
+      <a class="center" href="gda/"><img class="image" src="assets/archive-image.png" /></a>
     </div>
 
     <script>
