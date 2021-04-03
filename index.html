@@ -1,102 +1,148 @@
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jenna Shay</title>
-    <link rel="preload" href="cooperhewitt/CooperHewitt-Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="cooperhewitt/CooperHewitt-Medium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="cooperhewitt/CooperHewitt-MediumItalic.woff2" as="font" type="font/woff2" crossorigin>
-    <link href="style.css" rel="stylesheet">
+
     <style>
-    .full-logo {
-        height: 100%;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
+      @font-face {
+        font-family: Futura;
+        src: url("/Futura Bold.otf") format("opentype");
       }
-      .center-logo {
-        border: none;
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", sans-serif;
       }
-      .parralax {
-        height: 100%;
+      .logo {
+        width: 100%;
+        height: auto;
+      }
+      .row {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 400px;
+      }
+      .row > * {
+        flex-basis: 50%;
+        flex-grow: 0;
+      }
+      .header {
+        font-family: "Futura", Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 26px;
+      }
+      .subheader {
+        font-size: 22px;
+        padding-top: 40px;
+      }
+      .center-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .block {
+        display: flex;
+        flex-direction: column;
+        padding: 140px;
+      }
+      .purple {
+        color: #8357cb;
+      }
+      .red {
+        color: #d22626;
+      }
+      .link {
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .link:hover {
+        text-decoration: underline;
+      }
+
+      /* mobile */
+      @media only screen and (max-width: 1280px) {
+        .block {
+          padding: 40px;
+        }
+      }
+      @media only screen and (max-width: 720px) {
+        .row {
+          flex-direction: column;
+        }
+        .logo {
+          margin: 0 auto;
+          padding: 80px;
+          width: auto;
+          height: auto;
+          max-width: 100%;
+        }
+        .block {
+          padding: 80px;
+        }
+      }
+      @media only screen and (max-width: 570px) {
+        .row {
+          flex-direction: column;
+          margin-bottom: 200px;
+        }
+        .logo {
+          margin: 0 auto;
+          padding: 40px;
+          width: auto;
+          height: auto;
+        }
+        .block {
+          padding: 40px;
+        }
       }
     </style>
   </head>
-  <body id="home">
-    <div class='centerline'></div>
-
-    <header>
-      <div class="max-width">
-        <span class="sm-column">
-          <a class="content m5" href="#home">Jenna Shay</a>
-        </span>
-        <span class="sm-column">
-          <span class="sm-column"><a class="m5" href="#projects">Work</a></span>
-          <span class="sm-column"><a class="m5" href="contact.html">Contact</a></span>
-        </span>
-      </div>
-    </header>
-
-    <div >
-      <div class="full-logo"></div>
-      <img class="center-logo" src="logo.svg" />
-      <a href="#projects" class='chevron-button'>
-        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 19.19"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M19.84,13.78.26.09C.17,0,0,.06,0,.14V5.26L16.13,16.53h0l3.76,2.63a.22.22,0,0,0,.22,0L40,5.26V.08c0-.08-.17-.11-.26,0L20.07,13.78A.24.24,0,0,1,19.84,13.78Z"/></g></g></svg>
-      </a>
-    </div>
-
-    <div id="projects" class="max-width">
-      <div class="content text-content">
-      </div>
-      <div class="content">
-
-        <!--  FIRST COLUMN -->
-        <div class="column">
-          <a class="project-ns" href="poster/"><div class="m5 ib">
-            <img src="assets/cla-poster.png" />
-          </div></a>
-          <a class="project-ns sm-column" href="#"><div class="m5 ib">
-            <img src="assets/sacred.gif" />
-          </div></a>
-          <a class="project-ns sm-column" href="artstor/"><div class="m5 ib">
-            <img src="assets/archive.png" />
-          </div></a>
-          <a class="project-ns" href="fables/"><div class="m5 ib">
-            <img src="assets/folkart.png" />
-          </div></a>
-        </div>
-
-        <!--  SECOND COLUMN -->
-        <div class="column">
-          <a class="project-ns" href="archive/"><div class="m5 ib">
-            <img src="assets/archive-header.png" />
-          </div></a>
-          <a class="project-ns" href="#"><div class="m5 ib">
-            <img src="assets/photonics.png" />
-          </div></a>
-          <a class="project-ns" href="#"><div class="m5 ib">
-            <img src="assets/march-poster.png" />
-          </div></a>
+  <body>
+    <div class="intro row">
+      <img class="logo" src="logo.svg" />
+      <div class="center-item">
+        <div class="block">
+          <div class="header">
+            Hello! I’m <a href="/contact" class="link purple">Jenna Shay</a>. I’m a graphic designer
+            in San Francisco.
+          </div>
+          <div class="subheader">
+            I draw from my multidisciplinary background in art history, fine art, and visual
+            communication to create <span class="red link designs-link">designs</span> with impact
+            and intention.
+          </div>
         </div>
       </div>
     </div>
 
-    <footer style="margin-top: 300px">
-      <div class="max-width">
-        <div class="column mb20">
-          <div class="content m5">
-            <a href="mailto:contact@jennashay.com" target="_blank">contact@jennashay.com</a> | <a href="tel:585 813 3112">585 813 3112</a>
-            <br />© 2019 Jenna Shay
-          </div>
-        </div>
-        <div class="column">
-          <div class="socials">
-            <a class="social" href="https://www.linkedin.com/in/jenna-shay/" target="_blank">Linkedin</a>
-            <a class="social" href="https://www.instagram.com/groovyjenna2000/" target="_blank">Instagram</a>
-            <a class="social" href="https://www.behance.net/jennashay" target="_blank">Behance</a>
+    <div id="designs" class="row">
+      <div class="center-item">
+        <div class="block">
+          <a href="archive/" class="link red header">The Graphic Design Archive Reimagined</a>
+          <div class="subheader">
+            A site containing a plethora of inspirational images from design’s past got a 21st
+            Century update for my MFA thesis.
           </div>
         </div>
       </div>
-    </footer>
-    <script src="main.js" type="text/javascript"></script>
+      <a class="center-item logo" href="archive/"
+        ><img class="logo" src="assets/archive-image.png"
+      /></a>
+    </div>
+
+    <script>
+      const designLink = document.querySelector(".designs-link");
+      const designSection = document.getElementById("designs");
+      designLink.addEventListener("click", () => {
+        designSection.scrollIntoView({
+          block: "start",
+          behavior: "smooth",
+        });
+      });
+    </script>
   </body>
 </html>
