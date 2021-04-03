@@ -12,6 +12,7 @@ body {
   font-size: 18px;
 }
 .image {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -22,12 +23,12 @@ body {
   max-width: 1280px;
   margin: 0 auto 400px;
 }
-.row > * {
+/* .column {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-}
+} */
 .header {
   font-family: "Futura", Helvetica, sans-serif;
   font-weight: bold;
@@ -48,7 +49,7 @@ body {
   padding: 140px;
 }
 .purple {
-  color: #8357cb;
+  color: #4a33e8;
 }
 .red {
   color: #d22626;
@@ -64,7 +65,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* mobile */
 @media only screen and (max-width: 1280px) {
   .block {
     padding: 40px;
@@ -77,12 +77,7 @@ body {
   }
   .logo-container {
     max-width: 100%;
-    padding: 80px;
     margin: 0 auto;
-  }
-  .image {
-    max-width: 100%;
-    height: auto;
   }
   .block {
     padding: 80px;
@@ -90,17 +85,13 @@ body {
 }
 @media only screen and (max-width: 570px) {
   .row {
+    display: flex;
     flex-direction: column;
     margin-bottom: 100px;
   }
   .logo-container {
     max-width: 100%;
-    margin: 0 auto;
     padding: 40px;
-  }
-  .image {
-    max-width: 100%;
-    height: auto;
   }
   .block {
     padding: 40px;
