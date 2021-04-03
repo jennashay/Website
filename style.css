@@ -35,7 +35,7 @@ body {
   font-size: 26px;
 }
 .subheader {
-  font-size: 22px;
+  font-size: 18px;
   padding-top: 40px;
 }
 .center {
@@ -78,6 +78,7 @@ body {
   .logo-container {
     max-width: 100%;
     margin: 0 auto;
+    padding: 80px;
   }
   .block {
     padding: 80px;
