@@ -14,7 +14,10 @@
         margin-top: 0px;
       }
       .logo-link {
+        display: flex;
+        flex-direction: row-reverse;
         margin-right: 20px;
+        width: 100%;
       }
       .logo {
         height: 83px;
@@ -33,11 +36,6 @@
         height: 100%;
         width: auto;
       }
-      @media only screen and (min-width: 721px) {
-        .logo-link {
-          flex-direction: row-reverse;
-        }
-      }
       @media only screen and (max-width: 720px) {
         body {
           margin: 40px;
@@ -46,6 +44,7 @@
           flex-basis: auto;
         }
         .logo-link {
+          flex-direction: row;
           margin-bottom: 40px;
         }
         .text-content {
@@ -53,6 +52,12 @@
         }
       }
       @media only screen and (max-width: 570px) {
+        body {
+          margin: 20px;
+        }
+        .logo-link {
+          flex-direction: row;
+        }
         .socials {
           justify-content: space-between;
         }
